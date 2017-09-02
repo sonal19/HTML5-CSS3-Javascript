@@ -1,0 +1,83 @@
+﻿#overlay {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #888;
+    display: none;
+    opacity: 0.9;
+}
+
+#popup {
+    position: fixed;
+    top: calc(50% - 125px);
+    left: calc(50% - 225px);
+    height: 250px;
+    width: 450px;
+    background-color: #b6ff00;
+    display: none;
+    margin: 2px;
+    padding: 5px;
+}
+
+    #popup fieldset {
+        padding: 20px !important;
+        margin: 10px auto;
+        text-align: center;
+        color: black;
+    }
+
+[action] {
+    text-decoration: underline;
+    color: blue;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#tblUser th, td {
+    border: 2px solid black;
+    padding: 15px;
+    margin: 15px auto;
+}
+
+#userFormTitle {
+    text-align: center;
+    color: #1414bc;
+}
+
+#userTable {
+    position: relative;
+}
+
+#fieldPop {
+    background-color: white;
+}
+
+#fsUsers {
+    position: absolute;
+}
+
+#btnAdd {
+    position: absolute;
+    top: 50px;
+    left: 100%;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+span img {
+    height: 20px;
+    width: 20px;
+    
+}

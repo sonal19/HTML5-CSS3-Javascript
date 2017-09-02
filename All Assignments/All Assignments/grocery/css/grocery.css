@@ -1,0 +1,35 @@
+﻿#groceryList {
+    position: relative;
+    width: 50%;
+}
+
+#divGroceryList {
+    position: relative;
+    padding: 10px;
+    border: 2px solid black;
+    display:none;
+}
+
+#unorderedListGroceries {
+    list-style: none;
+    padding: 10px;
+}
+
+#addItem {
+    position: relative;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+p {
+    font-size: 22px;
+    font-weight: bold;
+    color:#413c3c;
+}
+
+#legendGL{
+    text-align:center;
+    font-size:25px;
+    color:#000000;
+    font-weight:bold;
+}

@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>User List</title>
+    <link rel="stylesheet" href="css/user.css" />
+</head>
+<body>
+    <div id="userTable">
+        <fieldset id="fsUsers">
+            <legend id="tableLegend">
+                USERS
+            </legend>
+
+            <table id="tblUser">
+                <tr>
+                    <th>Actions</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Website</th>
+                </tr>
+                <tr class="hidden" userid="0">
+                    <td>
+                        <span class="action" action="Edit"><img src="images/edit.png" /></span><span class="action" action="Delete"><img src="images/delete.png" /></span>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="#"></a></td>
+                </tr>
+            </table>
+            <button id="btnAdd">
+                <img src="images/add.jpg" />
+            </button>
+        </fieldset>
+
+    </div>
+
+    <div id="overlay">
+        <div id="popup">
+            <fieldset id="fieldPop">
+                <legend id="userFormTitle">USER EDIT FORM</legend>
+                <form>
+                    <input type="hidden" id="hiddenUserId" />
+
+                    <div>
+                        <label for="txtName">Name:</label>
+                        <input id="txtName" value="" type="text" />
+                    </div>
+                    <br />
+                    <div>
+                        <label for="txtEmail">Email:</label>
+                        <input id="txtEmail" value="" type="email" />
+                    </div>
+                    <br />
+                    <div>
+                        <label for="txtPhone">Phone:</label>
+                        <input id="txtPhone" value="" type="text" />
+                    </div>
+                    <br />
+                    <div>
+                        <label for="txtWebsite">Website:</label>
+                        <input id="txtWebsite" value="" type="text" />
+                    </div>
+                    <br />
+                    <div>
+                        <input id="btnSave" value="Save" type="button" />
+                        <input id="btnCancel" value="Close" type="button" />
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
+</body>
+</html>

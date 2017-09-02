@@ -1,0 +1,30 @@
+Function.prototype.customBind=function(){
+
+var that=arguments[0];
+var funcobj=this;
+
+argsarray=Array.from(arguments);
+
+var prevargu=argsarray.slice(1);
+
+var retval=function(){
+var newagrset=Array.from(arguments);
+fullparamsforFFC=Array.prototype.concat(prevargu,newagrset);
+var res=funcobj.apply(that,fullparamsforFFC);
+
+return res;
+
+}
+
+
+return retval;
+}
+
+
+function add(x,y){
+return parseInt(x)+parseInt(y);
+}
+
+var x=add.customBind(null,'10','5');
+
+x();
